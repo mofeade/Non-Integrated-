@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Non Intergrated Project</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4N2udv7T_s3JW0aOiRpgvZ_8Q91r0OyA"></script>
+</head>
+<body>
+	<div id="logo">
+		<img style="width: 35%; height: 35%;" src="images/fitstamp.png">
+	</div>
+
+
+	<div id="Nav">
+					<ul>
+						<a href="index.html"><li>Home</li></a>
+						<a href="about.html"><li>About us</li></a>
+						<a href="contact.html"><li>Contact</li></a>
+					</ul>
+	</div>
+
+<hr>
+	<h2 style="text-align: center; font-family: Oswald; color: #fff;">Contact us Today</h2>
+		 <form name="contactForm" method="post" action="send_email.php">
+  <label id="first_name">First Name</label>
+  <input  type="text" name="first_name" maxlength="50" size="20">
+  <label id="last_name">Last Name</label>
+  <input  type="text" name="last_name" maxlength="50" size="20">
+  <label id="email">Email Address</label>
+  <input  type="text" name="email" maxlength="80" size="20">
+  <label id="telephone">Phone Number</label>
+  <input  type="text" name="telephone" maxlength="30" size="20">
+  <label id="comments">Message</label>
+  <textarea  name="comments" maxlength="500" cols="20" rows="5"></textarea>
+  <input type="submit" value="Submit">
+		</form><hr>
+
+
+	<h4 class="geocode-header" id="info">Using the Geocode API</h4>
+
+	<div id="mapDirections">
+	<input type="text" class="address">
+	<button class="geocode">Find Route</button>
+	</div>
+
+	<div class="preload-wrapper">
+		<i class="fa fa-spinner fa-spin"></i>
+		<span>Map loading...</span>
+	</div>
+
+	<div class="map-wrapper"></div><br><br><hr>
+
+	
+
+	<div id="footer">
+		<p>&copy 2017 Chantry Islands </p>
+	</div>
+
+	
+	
+<script src="js/main.js" ></script>	
+</body>
+</html>
