@@ -1,0 +1,305 @@
+.map-wrapper, .preload-wrapper { 
+	margin: 0 auto;
+	width: 70%;  
+	height: 350px; 
+}
+
+
+body {
+	background-color: #a5a7a8;
+}
+
+
+button { 
+	cursor: pointer; 
+	margin-left: 12px;
+	border: 1px solid #21d2ea;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #21d2ea ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color: #981b1e;
+
+ }
+
+ #logo {
+ 	margin: 0 auto;
+ 	width: 40%;
+ 	height: 40%;
+ 	text-align: center;
+ }
+
+
+#Nav{ 
+	float: none; 
+	margin-top: 15px;
+	margin: 0 auto; 
+	text-align: center;
+}
+
+
+#Nav ul li:hover{
+	box-shadow: 0px 5px 10px #666;
+    background-color: rgba(0, 174, 239, 0.85); 
+	cursor: pointer;
+	color: #fff;
+}
+
+
+#Nav ul li{
+	display: inline-block; 
+	margin: 0 10px; 
+	color: #fff;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family: "Oswald";
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+}
+
+
+#vid {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+video {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	height: 50%;
+}
+
+
+
+
+#playButton{
+	background: url('../images/play.jpg');
+	height:35px;
+	width:123px;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 0px #000;
+	transition: all 0.15s ease-in-out;
+}
+#playButton:hover, #volUpButton:hover, #volDownButton:hover, #muteButton:hover{
+	box-shadow: 0px 1px 5px #555;
+}
+#volUpButton{
+background: url('../images/volUp.jpg');
+	height:35px;
+	width:123px;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 0px #000;
+	transition: all 0.15s ease-in-out;
+}
+
+
+#volDownButton{
+background: url('../images/volDown.jpg');
+	height:35px;
+	width:123px;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 0px #000;
+	transition: all 0.15s ease-in-out;
+}
+
+
+#muteButton{
+background: url('../images/mute.jpg');
+	height:35px;
+	width:123px;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 0px #000;
+	transition: all 0.15s ease-in-out;
+}
+
+ .cText {
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	color: #981b1e;
+ }
+
+
+ form{
+ 	padding: 20px; 
+ 	width: 400px;
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+  
+ input{
+        height: 50px;
+        width: 350px;
+        margin-bottom: 50px;
+        margin: 0 auto;
+ 	text-align: center;
+
+}
+
+label{
+    font-size: 24px;
+    font-family: "oswald";
+    margin-right: 50px;
+    margin: 0 auto;
+ 	text-align: center;
+ 	color: #fff;
+}
+
+input[type="submit"]{
+    width: 80px;
+    margin: 20px;
+    transition: all 0.25s ease-in-out;
+    border: 2px solid #00aeef;
+    background: #fff;
+
+}
+
+input[type="submit"]:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+
+}
+textarea, input{  
+  padding: 2px;
+  font-family: "oswald";
+  font-size: 20px;
+}
+
+
+textarea{
+	width: 400px; 
+	height: 120px; 
+	transition: width 0.5s ease-in-out, 
+	height 0.5s ease-in-out;
+}
+textarea:active, textarea:hover{
+     font-size: 26px; 
+     width: 600px; 
+     height: 450px;
+}
+
+.address { 
+	width: 350px;
+	border-style: ridge;
+ }
+ 
+#info {
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ 	color: #fff;
+ }
+
+ .containerBox{
+	margin: 0 auto;
+	text-align: center;
+}
+
+ .geocode {
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+
+ #mapDirections { 
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	margin-bottom: 15px;
+  }
+
+
+.contentInfo{
+	margin: 0 auto;
+	text-align: center;
+	width: 400px;
+}
+
+.preload-wrapper { 
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.85);
+	border: 2px solid #ccc;
+	z-index: 50;
+	width: 70%;
+	border-radius: 8px;
+	left: 0;
+	right: 0;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+	color: #CCC;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: italic;
+
+	pointer-events: none;
+	transition: opacity 0.7s ease;
+}
+
+.hide-preloader { opacity: 0; }
+
+.preload-wrapper i { margin: 100px 0 20px; font-size: 2.2em; }
+
+.preload-wrapper span { display: block; }
+
+#footer {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #828282;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 1170px) {
+	.map-wrapper, .preload-wrapper {
+	margin: 0 auto;
+	width: 80%;  
+	height: 450px;  
+	 }
+
+	.cText {
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	width: 68%;
+ }
+ #logo {
+ 	margin: 0 auto;
+ 	width: 50%;
+ 	height: 50%;
+ }
+
+ 
+
+}
+
+
+@media screen and (min-width: 200px) {
+	.map-wrapper, .preload-wrapper {
+	margin: 0 auto;
+	width: 60%;  
+	height: 250px;  
+	 }
+
+	.cText {
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	width: 75%;
+ }
+
+ #logo {
+ 	margin: 0 auto;
+ 	width: 50%;
+ 	height: 50%;
+ }
+
+
+}
